@@ -1,19 +1,21 @@
 # 🥟 HoloList to JSON & iCalendar
 
-> Dump hololive & HOLOSTARS Birthdays from [HoloList](https://hololist.net) to JSON & iCalendar
+> Dump hololive, HOLOSTARS, & NIJISANJI Project Birthdays from [HoloList](https://hololist.net) to JSON & iCalendar
 
 ## Install iCalendar
 
-To install the *latest* HoloList iCalendar containing all hololive and HOLOSTARS birthdays, download and open [`latest.ics`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest.ics).
+To install the *latest* iCalendar containing all hololive and HOLOSTARS birthdays, download and open [`latest_hololive.ics`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest_hololive.ics); for NIJISANJI Project birthdays, download and open [`latest_nijisanji.ics`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest_nijisanji.ics).
 
 ## Latest Data
 
-A JSON file containing the *latest* HoloList data is present in the [`latest.json`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest.json)
-file.
+A JSON file containing the *latest* hololive birthday data is present in the [`latest_hololive.json`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest_hololive.json)
+file; [`latest_nijisanji.json`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest_nijisanji.json)
+contains the *latest* NIJISANJI Project data.
 
-An ICS file containing the *latest* HoloList iCalendar is present in the [`latest.ics`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest.ics) file.
+An ICS file containing the *latest* hololive birthday iCalendar is present in the [`latest_hololive.ics`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest_hololive.ics) file; the *latest* NIJISANJI
+Project iCalendar is contained in [`latest_nijisanji.ics`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest_nijisanji.ics).
 
-You can generate both of these files locally using the [`generate_latest`](./generate_latest) Bash script.
+You can generate all of these files locally using the [`generate_latest`](./generate_latest) Bash script.
 
 ## Sample JSON Data
 

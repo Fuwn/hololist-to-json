@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-python3 generate_json.py
-python3 generate_icalendar.py
+for profile in hololive nijisanji; do
+  python3 generate_json.py "${profile}"
+  python3 generate_icalendar.py "${profile}"
 
-mv hololive_birthdays.json latest.json
-mv hololive_birthdays.ics latest.ics
+  mv "${profile}_birthdays.json" "latest_${profile}.json"
+  mv "${profile}_birthdays.ics" "latest_${profile}.ics"
+done

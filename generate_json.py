@@ -1,8 +1,10 @@
 import requests
 import bs4
 import json
+import sys
 
-response = requests.get("https://hololist.net/hololive-birthdays/")
+profile = sys.argv[1] if len(sys.argv) > 1 else "hololive"
+response = requests.get(f"https://hololist.net/{profile}-birthdays/")
 
 response.raise_for_status()
 
@@ -41,5 +43,5 @@ for month_div in bs4.BeautifulSoup(response.text, "html.parser").find_all(
                     }
                 )
 
-with open("hololive_birthdays.json", "w", encoding="utf-8") as json_file:
+with open(f"{profile}_birthdays.json", "w", encoding="utf-8") as json_file:
     json.dump(birthdays, json_file, ensure_ascii=False, indent=4)

@@ -1,17 +1,21 @@
 import json
 from datetime import datetime
 import icalendar
+import sys
 
-with open("./hololive_birthdays.json", "r", encoding="utf-8") as file:
+profile = sys.argv[1] if len(sys.argv) > 1 else "hololive"
+
+with open(f"./{profile}_birthdays.json", "r", encoding="utf-8") as file:
     birthdays = json.load(file)
 
 calendar = icalendar.Calendar()
+title = "hololive & HOLOSTARS" if profile == "hololive" else "NIJISANJI Project"
 
-calendar.add("prodid", "-//Fuwn//hololive & HOLOSTARS Birthday Calendar//EN")
+calendar.add("prodid", f"-//Fuwn//{title} Birthday Calendar//EN")
 calendar.add("version", "2.0")
 calendar.add("calscale", "GREGORIAN")
 calendar.add("method", "PUBLISH")
-calendar.add("x-wr-calname", "hololive & HOLOSTARS Birthdays")
+calendar.add("x-wr-calname", f"{title} Birthdays")
 calendar.add("x-wr-timezone", "Asia/Tokyo")
 calendar.add("x-wr-caldesc", "https://github.com/Fuwn/hololist-to-json-and-ical")
 
@@ -34,11 +38,11 @@ for birthday in birthdays:
         event.add("rrule", {"freq": "yearly"})
         event.add(
             "uid",
-            f"{birthday['name'].replace(' ', '_').lower()}_{birthday['month']}{birthday['day']}@hololivepro.com",
+            f"{birthday['name'].replace(' ', '_').lower()}_{birthday['month']}{birthday['day']}@{'hololivepro.com' if profile == 'hololive' else 'nijisanji.jp'}",
         )
         calendar.add_component(event)
     except ValueError as e:
         print(e)
 
-with open("hololive_birthdays.ics", "wb") as ics_file:
+with open(f"{profile}_birthdays.ics", "wb") as ics_file:
     ics_file.write(calendar.to_ical())
