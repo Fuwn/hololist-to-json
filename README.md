@@ -2,6 +2,10 @@
 
 > Dump hololive & HOLOSTARS Birthdays from [HoloList](https://hololist.net) to JSON & iCalendar
 
+## Install iCalendar
+
+To install the *latest* HoloList iCalendar containing all hololive and HOLOSTARS birthdays, download and open [`latest.ics`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest.ics).
+
 ## Latest Data
 
 A JSON file containing the *latest* HoloList data is present in the [`latest.json`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest.json)
