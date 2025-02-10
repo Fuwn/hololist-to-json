@@ -1,13 +1,15 @@
-# 🥟 HoloList to JSON
+# 🥟 HoloList to JSON & iCalendar
 
-> Dump hololive & HOLOSTARS Birthdays from [HoloList](https://hololist.net) to JSON
+> Dump hololive & HOLOSTARS Birthdays from [HoloList](https://hololist.net) to JSON & iCalendar
 
 ## Latest Data
 
 A JSON file containing the *latest* HoloList data is present in the [`latest.json`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest.json)
 file.
 
-## Sample Data
+An ICS file containing the *latest* HoloList iCalendar is present in the [`latest.ics`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest.ics) file.
+
+## Sample JSON Data
 
 ```json
 [
