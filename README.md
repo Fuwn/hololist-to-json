@@ -9,6 +9,8 @@ file.
 
 An ICS file containing the *latest* HoloList iCalendar is present in the [`latest.ics`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest.ics) file.
 
+You can generate both of these files locally using the [`generate_latest`](./generate_latest) Bash script.
+
 ## Sample JSON Data
 
 ```json
