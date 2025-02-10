@@ -4,16 +4,16 @@
 
 ## Install iCalendar
 
-To install the *latest* iCalendar containing all hololive and HOLOSTARS birthdays, download and open [`latest_hololive.ics`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest_hololive.ics); for NIJISANJI Project birthdays, download and open [`latest_nijisanji.ics`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest_nijisanji.ics).
+To install the *latest* iCalendar containing all hololive and HOLOSTARS birthdays, download and open [`latest_hololive.ics`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/data/latest_hololive.ics); for NIJISANJI Project birthdays, download and open [`latest_nijisanji.ics`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/data/latest_nijisanji.ics).
 
 ## Latest Data
 
-A JSON file containing the *latest* hololive birthday data is present in the [`latest_hololive.json`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest_hololive.json)
-file; [`latest_nijisanji.json`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest_nijisanji.json)
+A JSON file containing the *latest* hololive birthday data is present in the [`latest_hololive.json`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/data/latest_hololive.json)
+file; [`latest_nijisanji.json`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/data/latest_nijisanji.json)
 contains the *latest* NIJISANJI Project data.
 
-An ICS file containing the *latest* hololive birthday iCalendar is present in the [`latest_hololive.ics`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest_hololive.ics) file; the *latest* NIJISANJI
-Project iCalendar is contained in [`latest_nijisanji.ics`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/latest_nijisanji.ics).
+An ICS file containing the *latest* hololive birthday iCalendar is present in the [`latest_hololive.ics`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/data/latest_hololive.ics) file; the *latest* NIJISANJI
+Project iCalendar is contained in [`latest_nijisanji.ics`](https://raw.githubusercontent.com/Fuwn/hololist-to-json/refs/heads/main/data/latest_nijisanji.ics).
 
 You can generate all of these files locally using the [`generate_latest`](./generate_latest) Bash script.
 

@@ -4,6 +4,6 @@ for profile in hololive nijisanji; do
   python3 generate_json.py "${profile}"
   python3 generate_icalendar.py "${profile}"
 
-  mv "${profile}_birthdays.json" "latest_${profile}.json"
-  mv "${profile}_birthdays.ics" "latest_${profile}.ics"
+  mv "${profile}_birthdays.json" "data/latest_${profile}.json"
+  mv "${profile}_birthdays.ics" "data/latest_${profile}.ics"
 done
